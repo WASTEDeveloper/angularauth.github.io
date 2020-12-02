@@ -1,0 +1,13 @@
+<form [formGroup]="loginForm">
+    <div class="input-group">
+        <div class="input">
+            <p>Логин:</p>
+            <input formControlName="login" id="login" type="text" placeholder="Ваш логин" required>
+        </div>
+        <div class="input">
+            <p>Пароль:</p>
+            <input formControlName="password" id="pass" type="password" placeholder="Ваш пароль" required>
+        </div>  
+    </div>
+    <button [disabled]="buttonSubmitEnabled" type="submit" mat-raised-button (click)="login()">Войти</button>
+</form>

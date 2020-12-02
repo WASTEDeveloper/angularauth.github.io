@@ -1,0 +1,8 @@
+<div class="container">
+    <app-news-block style="margin: 30px;" 
+        *ngFor="let item of dataList" 
+        [title]="item.title"
+        [desc]="item.desc"
+        [author]="item.author">
+    </app-news-block>
+</div>

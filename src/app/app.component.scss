@@ -1,0 +1,33 @@
+nav {
+    display: flex;
+    align-items: center;
+    background-color: #3f51b5;
+    height: 80px;
+    padding: 0 30px;
+    h2 {
+        font-size: 24px;
+        font-weight: 300;
+        color: #FFF;
+        margin: 0;
+    }
+    ul {
+        margin-left: 50px;
+        display: flex;
+        list-style: none;
+        li:not(:last-child) {
+            margin-right: 30px;
+        }
+        li {
+            display: block;
+            a {
+                text-decoration: none;
+                color: #FFF;
+                font-size: 14px;
+            }
+        }
+    }
+    button {
+        width: 150px;
+        margin-left: auto;
+    }
+}
