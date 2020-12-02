@@ -24,10 +24,10 @@ export class LoginComponent implements OnInit {
   }
 
   login() {
-    this.loginForm.valueChanges.subscribe(x => this.buttonSubmitEnabled = true);
     for(let i = 0; i < this.usersList.length; ++i) {
       if (this.usersList[i].login == this.loginForm.value['login'] && this.usersList[i].password == this.loginForm.value['password']){
         this.loginForm.disable();
+        this.buttonSubmitEnabled = true;
         this.router.navigate(['/main']);
       }
     }
